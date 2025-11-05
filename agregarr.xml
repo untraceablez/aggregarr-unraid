@@ -25,7 +25,7 @@ Template GitHub: https://github.com/untraceablez/aggregarr-unraid/</Overview>
   <Category>MediaApp:Other MediaServer:Other</Category>
   <WebUI>http://[IP]:[PORT:7171]</WebUI>
   <TemplateURL/>
-  <Icon>https://raw.githubusercontent.com/agregarr/agregarr/master/public/icon.png</Icon>
+  <Icon>https://agregarr.org/img/os_icon.svg</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
