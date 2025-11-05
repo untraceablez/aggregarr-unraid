@@ -1,4 +1,4 @@
-![aggregarr-icon](https://raw.githubusercontent.com/agregarr/agregarr/master/public/icon.png)
+![aggregarr-icon](agregarr.png)
 # `aggregarr-unraid`
 
 ## Table of Contents
@@ -43,8 +43,6 @@ This template is designed specifically for unRAID users. You should be able to f
 * **Radarr and/or Sonarr** (recommended): For automated media management
 * **Overseerr** (optional): For request integration
 * **Tautulli** (optional): For statistics integration
-
-**Note**: Unlike traditional helpdesk software, Agregarr does not require a database. Configuration is stored in the config directory.
 
 #### Installing Agregarr from Community Applications
 
