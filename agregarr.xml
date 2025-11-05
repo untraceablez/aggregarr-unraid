@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>aggregarr</Name>
+  <Repository>agregarr/agregarr:latest</Repository>
+  <Registry>https://hub.docker.com/r/agregarr/agregarr/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/untraceablez/aggregarr-unraid/issues</Support>
+  <Project>https://github.com/agregarr/agregarr/</Project>
+  <Overview>Agregarr - Automated Plex Collection Management&#xD;
+&#xD;
+Agregarr manages your Plex collections by regularly updating them with content from multiple sources including Trakt, IMDb, TMDB, Letterboxd, MDBList, FlixPatrol, AniList, and MyAnimeList. It integrates seamlessly with Radarr, Sonarr, Overseerr, and Tautulli to provide comprehensive media management and collection automation.&#xD;
+&#xD;
+Features:&#xD;
+- Automated collection updates from multiple sources&#xD;
+- Integration with Radarr and Sonarr for media management&#xD;
+- Overseerr integration for request management&#xD;
+- Tautulli integration for statistics&#xD;
+- Coming Soon feature (requires media volume mounts)&#xD;
+&#xD;
+Website: https://github.com/agregarr/agregarr/&#xD;
+Template GitHub: https://github.com/untraceablez/aggregarr-unraid/</Overview>
+  <Category>MediaApp:Other MediaServer:Other</Category>
+  <WebUI>http://[IP]:[PORT:7171]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/agregarr/agregarr/master/public/icon.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1681318382</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="webUI Port" Target="7171" Default="7171" Mode="tcp" Description="Port for accessing the Agregarr web interface" Type="Port" Display="always" Required="true" Mask="false">7171</Config>
+  <Config Name="Config directory" Target="/app/config" Default="/mnt/user/appdata/aggregarr" Mode="rw" Description="Directory for Agregarr configuration files" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/aggregarr</Config>
+  <Config Name="Movies directory (Optional)" Target="/data/movies" Default="" Mode="ro" Description="Path to your movies directory (must match Radarr path). Required for Coming Soon feature." Type="Path" Display="always" Required="false" Mask="false"/>
+  <Config Name="TV Shows directory (Optional)" Target="/data/tv" Default="" Mode="ro" Description="Path to your TV shows directory (must match Sonarr path). Required for Coming Soon feature." Type="Path" Display="always" Required="false" Mask="false"/>
+  <Config Name="Time Zone" Target="TZ" Default="America/New_York" Mode="" Description="Your timezone." Type="Variable" Display="always" Required="false" Mask="false">America/New_York</Config>
+</Container>
