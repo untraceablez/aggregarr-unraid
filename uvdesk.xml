@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>uvdesk</Name>
+  <Repository>dietermartens/uvdesk:latest</Repository>
+  <Registry>https://hub.docker.com/r/dietermartens/uvdesk/</Registry>
+  <Network>reverseproxy</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/untraceablez/uvdesk-unraid/issues</Support>
+  <Project>https://github.com/uvdesk/community-skeleton/</Project>
+  <Overview>UVDesk - An Open Source Helpdesk.&#xD;
+&#xD;
+UVDesk is an open source helpdesk solution that can be self-hosted, allowing you to manage family and friends' IT problems with a helpdesk like you would in an IT career. If you are wanting to use UVDesk for business use, you should support the developers by contacting them on their website and looking at pricing options.&#xD;
+&#xD;
+Website: https://www.uvdesk.com/en/&#xD;
+Original Project GitHub: https://github.com/uvdesk/community-skeleton/&#xD;
+Template GitHub: https://github.com/untraceablez/uvdesk-unraid/</Overview>
+  <Category>Productivity: Tools: Status:Beta</Category>
+  <WebUI>http://[IP]:[PORT:80]</WebUI>
+  <TemplateURL/>
+  <Icon>https://yt3.googleusercontent.com/ytc/AL5GRJUffl2H80R11YincESU0WpqXTBIHekmY_B6cRN6Ng=s900-c-k-c0x00ffffff-no-rj</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1681318382</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="webUI Port" Target="80" Default="6744" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">6744</Config>
+  <Config Name="Config directory" Target="/app" Default="/mnt/user/appdata/uvdesk" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/uvdesk</Config>
+  <Config Name="mySQL Host" Target="MYSQL_HOST" Default="[IP]" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="mySQL Host Port" Target="MYSQL_PORT" Default="3306" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="mySQL User" Target="MYSQL_USER" Default="uvdesk" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">uvdesk</Config>
+  <Config Name="mySQL Password" Target="MYSQL_PASSWORD" Default="whateveryoumadethepassworddude" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="true"/>
+  <Config Name="mySQL Root Password" Target="MYSQL_ROOT_PASSWORD" Default="yourmysqlrootpassword" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="true"/>
+  <Config Name="Server FQDN" Target="ServerName" Default="https://youripordomainname.here" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="APP_ENV" Target="APP_ENV" Default="dev" Mode="" Description="Puts app in development or production mode.&#13;&#10;dev = development mode&#13;&#10;prod = production mode" Type="Variable" Display="always" Required="true" Mask="false">dev</Config>
+  <Config Name="APP_SECRET" Target="APP_SECRET" Default="36d362127cb3e4d4982ce4cf6b716ddc53c5299c" Mode="" Description="The App Secret, set this to any random string, personally I like to hash a phrase into SHA1 and use that." Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Time Zone" Target="TZ" Default="America/New_York" Mode="" Description="Your timezone." Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="App Currency" Target="APP_CURRENCY" Default="USD" Mode="" Description="Currency value to use if you plan on CMS support." Type="Variable" Display="always" Required="false" Mask="false"/>
+</Container>
